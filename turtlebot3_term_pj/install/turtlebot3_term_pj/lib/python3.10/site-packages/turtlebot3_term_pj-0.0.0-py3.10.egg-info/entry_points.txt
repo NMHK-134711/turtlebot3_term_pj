@@ -1,0 +1,3 @@
+[console_scripts]
+teleop_gui = turtlebot3_term_pj.teleop_gui:main
+
