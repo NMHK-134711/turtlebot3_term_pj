@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from ui_master import Ui_MainWindow
+from turtlebot3_term_pj.ui_master import Ui_MainWindow
 import subprocess
 import os
 import rclpy
@@ -119,9 +119,11 @@ class MasterWindow(QMainWindow):
         self.patrol_process = None
         self.main_ui_process = None
 
-
-if __name__ == '__main__':
+def main():
     app = QApplication(sys.argv)
     window = MasterWindow()
     window.show()
     sys.exit(app.exec_())
+
+if __name__ == '__main__':
+    main()
