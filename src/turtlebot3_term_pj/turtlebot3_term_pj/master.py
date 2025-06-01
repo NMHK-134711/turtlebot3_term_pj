@@ -3,6 +3,21 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 from ui_master import Ui_MainWindow
 import subprocess
 import os
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import Twist
+
+class EmergencyStopNode(Node):
+    def __init__(self):
+        super().__init__('emergency_stop_node')
+        self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
+
+    def stop_robot(self):
+        twist = Twist()
+        twist.linear.x = 0.0
+        twist.angular.z = 0.0
+        self.publisher.publish(twist)
+        self.get_logger().info('Emergency stop command sent to the robot')
 
 class MasterWindow(QMainWindow):
     def __init__(self):
@@ -12,6 +27,10 @@ class MasterWindow(QMainWindow):
         self.cartographer_process = None
         self.navigation_process = None
         self.patrol_process = None
+        self.main_ui_process = None
+
+        rclpy.init()
+        self.emergency_stop_node = EmergencyStopNode()
 
         # 버튼 연결
         self.ui.start_ui_main_node.clicked.connect(self.start_main_ui)
@@ -19,6 +38,7 @@ class MasterWindow(QMainWindow):
         self.ui.save_map.clicked.connect(self.save_map)
         self.ui.kill_cartographer.clicked.connect(self.kill_cartographer)
         self.ui.start_nav2.clicked.connect(self.start_navigation)
+        self.ui.emergency_stop.clicked.connect(self.emergency_stop)
 
     def start_main_ui(self):
         try:
@@ -71,6 +91,34 @@ class MasterWindow(QMainWindow):
             self.ui.status_checker_nav2.setText("실행 중")
         except Exception as e:
             self.ui.status_checker_nav2.setText(f"오류: {str(e)}")
+
+    def emergency_stop(self):
+        # 모든 프로세스 중지
+        processes = [self.cartographer_process, self.navigation_process, self.patrol_process, self.main_ui_process]
+        for process in processes:
+            if process:
+                try:
+                    process.terminate()
+                    process.wait(timeout=5)
+                except Exception as e:
+                    self.ui.status_checker_ui_main.setText(f"프로세스 종료 오류: {str(e)}")
+
+        # 터틀봇 정지 명령 전송
+        self.emergency_stop_node.stop_robot()
+
+        # UI 업데이트
+        self.ui.status_checker_ui_main.setText("비상 정지")
+        self.ui.status_checker_cartographer.setText("비상 정지")
+        self.ui.status_checker_save_map.setText("비상 정지")
+        self.ui.status_checker_kill_cartographer.setText("비상 정지")
+        self.ui.status_checker_nav2.setText("비상 정지")
+
+        # 프로세스 변수 초기화
+        self.cartographer_process = None
+        self.navigation_process = None
+        self.patrol_process = None
+        self.main_ui_process = None
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

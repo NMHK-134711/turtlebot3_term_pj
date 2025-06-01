@@ -1,0 +1,37 @@
+[0.363s] Invoking command in '/home/hk/turtlebot3_term_pj/src/turtlebot3_term_pj': PYTHONPATH=/home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_term_pj build --build-base /home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/build install --record /home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/install.log --single-version-externally-managed install_data
+[0.502s] running egg_info
+[0.502s] writing ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/PKG-INFO
+[0.503s] writing dependency_links to ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/dependency_links.txt
+[0.503s] writing entry points to ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/entry_points.txt
+[0.503s] writing requirements to ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/requires.txt
+[0.503s] writing top-level names to ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/top_level.txt
+[0.504s] reading manifest file '../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/SOURCES.txt'
+[0.504s] writing manifest file '../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/SOURCES.txt'
+[0.504s] running build
+[0.504s] running build_py
+[0.504s] copying turtlebot3_term_pj/patrol_node.py -> /home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/build/lib/turtlebot3_term_pj
+[0.504s] copying turtlebot3_term_pj/ui_main.py -> /home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/build/lib/turtlebot3_term_pj
+[0.504s] copying turtlebot3_term_pj/main.py -> /home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/build/lib/turtlebot3_term_pj
+[0.504s] copying turtlebot3_term_pj/master.py -> /home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/build/lib/turtlebot3_term_pj
+[0.504s] running install
+[0.505s] running install_lib
+[0.505s] copying /home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/build/lib/turtlebot3_term_pj/patrol_node.py -> /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/python3.10/site-packages/turtlebot3_term_pj
+[0.505s] copying /home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/build/lib/turtlebot3_term_pj/ui_main.py -> /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/python3.10/site-packages/turtlebot3_term_pj
+[0.505s] copying /home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/build/lib/turtlebot3_term_pj/main.py -> /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/python3.10/site-packages/turtlebot3_term_pj
+[0.505s] copying /home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/build/lib/turtlebot3_term_pj/master.py -> /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/python3.10/site-packages/turtlebot3_term_pj
+[0.505s] byte-compiling /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/python3.10/site-packages/turtlebot3_term_pj/patrol_node.py to patrol_node.cpython-310.pyc
+[0.506s] byte-compiling /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/python3.10/site-packages/turtlebot3_term_pj/ui_main.py to ui_main.cpython-310.pyc
+[0.507s] byte-compiling /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/python3.10/site-packages/turtlebot3_term_pj/main.py to main.cpython-310.pyc
+[0.508s] byte-compiling /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/python3.10/site-packages/turtlebot3_term_pj/master.py to master.cpython-310.pyc
+[0.508s] running install_data
+[0.508s] copying package.xml -> /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/share/turtlebot3_term_pj
+[0.508s] copying launch/master_launch.py -> /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/share/turtlebot3_term_pj/launch
+[0.508s] running install_egg_info
+[0.510s] removing '/home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/python3.10/site-packages/turtlebot3_term_pj-0.0.0-py3.10.egg-info' (and everything under it)
+[0.510s] Copying ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info to /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/python3.10/site-packages/turtlebot3_term_pj-0.0.0-py3.10.egg-info
+[0.510s] running install_scripts
+[0.523s] Installing patrol_node script to /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/turtlebot3_term_pj
+[0.523s] Installing teleop_gui script to /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/turtlebot3_term_pj
+[0.523s] Installing ui_main_node script to /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/turtlebot3_term_pj
+[0.523s] writing list of installed files to '/home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/install.log'
+[0.537s] Invoked command in '/home/hk/turtlebot3_term_pj/src/turtlebot3_term_pj' returned '0': PYTHONPATH=/home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_term_pj build --build-base /home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/build install --record /home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/install.log --single-version-externally-managed install_data

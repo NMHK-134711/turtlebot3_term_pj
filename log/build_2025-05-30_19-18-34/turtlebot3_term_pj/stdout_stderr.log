@@ -1,0 +1,27 @@
+running egg_info
+creating ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info
+writing ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/dependency_links.txt
+writing entry points to ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/entry_points.txt
+writing requirements to ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/requires.txt
+writing top-level names to ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/top_level.txt
+writing manifest file '../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/SOURCES.txt'
+reading manifest file '../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/SOURCES.txt'
+writing manifest file '../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+creating /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/share/ament_index
+creating /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/share/ament_index/resource_index
+creating /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/share/ament_index/resource_index/packages
+copying resource/turtlebot3_term_pj -> /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/share/ament_index/resource_index/packages
+copying package.xml -> /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/share/turtlebot3_term_pj
+creating /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/share/turtlebot3_term_pj/launch
+copying launch/patrol_launch.py -> /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/share/turtlebot3_term_pj/launch
+running install_egg_info
+Copying ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info to /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/python3.10/site-packages/turtlebot3_term_pj-0.0.0-py3.10.egg-info
+running install_scripts
+Installing patrol_node script to /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/turtlebot3_term_pj
+Installing teleop_gui script to /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/turtlebot3_term_pj
+Installing ui_main_node script to /home/hk/turtlebot3_term_pj/install/turtlebot3_term_pj/lib/turtlebot3_term_pj
+writing list of installed files to '/home/hk/turtlebot3_term_pj/build/turtlebot3_term_pj/install.log'
