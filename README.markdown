@@ -10,6 +10,8 @@
 - nav2 must be installed
 
 ### Run code
+0. Open terminal as Home
+
 1. 
    ```bash
    mkdir turtlebot3_term_pj
