@@ -9,6 +9,7 @@
 - cartographer must be installed
 - nav2 must be installed
 
+### Run code
 1. 
    ```bash
    mkdir turtlebot3_term_pj
