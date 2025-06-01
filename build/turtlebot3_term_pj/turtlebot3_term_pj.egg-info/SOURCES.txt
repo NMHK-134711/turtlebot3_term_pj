@@ -8,10 +8,15 @@ setup.py
 ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/requires.txt
 ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/top_level.txt
 ../../build/turtlebot3_term_pj/turtlebot3_term_pj.egg-info/zip-safe
+launch/master_launch.py
 resource/turtlebot3_term_pj
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 turtlebot3_term_pj/__init__.py
+turtlebot3_term_pj/main.py
+turtlebot3_term_pj/master.py
 turtlebot3_term_pj/patrol_node.py
 turtlebot3_term_pj/teleop_gui.py
+turtlebot3_term_pj/ui_main.py
+turtlebot3_term_pj/ui_master.py
