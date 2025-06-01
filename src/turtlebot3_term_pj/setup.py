@@ -24,6 +24,7 @@ setup(
             'patrol_node = turtlebot3_term_pj.patrol_node:main',
             'ui_main_node = turtlebot3_term_pj.main:main',
             'teleop_gui = turtlebot3_term_pj.teleop_gui:main',
+            'master = turtlebot3_term_pj.master:main'
         ],
     },
 )
