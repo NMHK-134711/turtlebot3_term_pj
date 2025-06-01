@@ -9,8 +9,7 @@
 - cartographer must be installed
 - nav2 must be installed
 
-### Run code
-0. Open terminal as Home
+### Run code (Open terminal at Home)
 
 1. 
    ```bash
