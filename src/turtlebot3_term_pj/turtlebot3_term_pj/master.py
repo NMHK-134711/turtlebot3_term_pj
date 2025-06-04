@@ -67,15 +67,21 @@ class MasterWindow(QMainWindow):
 
     def kill_cartographer(self):
         try:
+            # Cartographer 관련 모든 프로세스 종료
+            subprocess.run(["pkill", "-f", "cartographer_node"], check=True)
+            subprocess.run(["pkill", "-f", "cartographer_occupancy_grid_node"], check=True)
+            # 혹시 모를 추가적인 Cartographer 관련 프로세스 종료
+            subprocess.run(["pkill", "-f", "cartographer"], check=True)
             if self.cartographer_process:
                 self.cartographer_process.terminate()
                 self.cartographer_process.wait(timeout=5)
                 self.cartographer_process = None
-                self.ui.status_checker_kill_cartographer.setText("종료됨")
-            else:
-                self.ui.status_checker_kill_cartographer.setText("Cartographer가 실행 중이 아님")
-        except Exception as e:
+            self.ui.status_checker_cartographer.setText("종료됨")
+            self.ui.status_checker_kill_cartographer.setText("종료됨")
+        except subprocess.CalledProcessError as e:
             self.ui.status_checker_kill_cartographer.setText(f"오류: {str(e)}")
+        except Exception as e:
+            self.ui.status_checker_kill_cartographer.setText(f"프로세스 종료 오류: {str(e)}")
 
     def start_navigation(self):
         try:
