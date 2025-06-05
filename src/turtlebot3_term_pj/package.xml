@@ -20,7 +20,8 @@
   <depend>nav2_simple_commander</depend>
   <depend>nav_msgs</depend>
   <depend>sensor_msgs</depend>
-
+  <depend>action_msgs</depend>
+  
   <buildtool_depend>ament_python</buildtool_depend>
 
   <export>

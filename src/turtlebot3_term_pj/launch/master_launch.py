@@ -1,10 +1,11 @@
 from launch import LaunchDescription
-from launch.actions import ExecuteProcess
+from launch_ros.actions import Node
 
 def generate_launch_description():
     return LaunchDescription([
-        ExecuteProcess(
-            cmd=['ros2', 'run', 'turtlebot3_term_pj','master'],
+        Node(
+            package='turtlebot3_term_pj',
+            executable='master',
             output='screen'
         )
     ])
