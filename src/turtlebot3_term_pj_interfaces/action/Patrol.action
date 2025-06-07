@@ -1,0 +1,10 @@
+# Goal
+geometry_msgs/PoseArray points
+---
+# Result
+bool success
+string message
+---
+# Feedback
+string status
+string current_point
