@@ -1,0 +1,12 @@
+camera_lidar_fusion_node:
+  ros__parameters:
+    image_width: 640
+    image_height: 480
+    camera_fov: 62.2
+    confidence_threshold: 0.5
+    target_distance: 0.15
+    approach_distance: 0.25
+    distance_tolerance: 0.02
+    angle_tolerance: 2.0
+    max_linear_speed: 0.2
+    max_angular_speed: 0.4
