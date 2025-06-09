@@ -1,5 +1,0 @@
-[console_scripts]
-patrol_node = turtlebot3_term_pj.patrol_node:main
-teleop_gui = turtlebot3_term_pj.teleop_gui:main
-ui_main_node = turtlebot3_term_pj.main:main
-
